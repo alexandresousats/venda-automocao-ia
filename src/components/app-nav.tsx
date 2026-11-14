@@ -45,10 +45,7 @@ export function AppNav() {
       </nav>
 
       <div className="flex flex-1 items-center justify-end gap-3">
-        <Link
-          href="/contratar"
-          className="rounded-lg bg-[var(--foreground)] px-4 py-2.5 text-[13px] font-medium text-[var(--background)] hover:opacity-90"
-        >
+        <Link href="/contratar" className="btn-primary px-4 py-2.5 text-[13px]">
           Contratar Automação
         </Link>
         <ProfileMenu />

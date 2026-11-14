@@ -40,10 +40,7 @@ export default function ContratarPage() {
             ))}
           </ul>
           <p className="text-xl font-semibold text-[#0f0f0f]">Sob consulta</p>
-          <a
-            href="#formulario"
-            className="inline-flex w-full items-center justify-center rounded-lg bg-[#0f0f0f] px-5 py-3 text-sm font-medium text-white"
-          >
+          <a href="#formulario" className="btn-primary w-full px-5 py-3 text-sm">
             Solicitar orçamento
           </a>
         </section>
@@ -101,7 +98,7 @@ export default function ContratarPage() {
               <div className="flex flex-col gap-2.5">
                 <button
                   type="submit"
-                  className="flex h-11 w-full items-center justify-center rounded-lg bg-[#0f0f0f] text-sm font-semibold text-white"
+                  className="btn-primary h-11 w-full text-sm font-semibold"
                 >
                   Enviar pedido
                 </button>

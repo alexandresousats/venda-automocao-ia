@@ -59,16 +59,13 @@ export default function ConfiguracoesPage() {
               placeholder="Nova senha (mock)"
               autoComplete="new-password"
             />
-            <div className="flex flex-wrap gap-3 pt-2">
-              <button
-                type="submit"
-                className="rounded-lg bg-[var(--foreground)] px-4 py-2.5 text-sm font-medium text-[var(--background)]"
-              >
+              <div className="flex flex-wrap gap-3 pt-2">
+              <button type="submit" className="btn-primary px-4 py-2.5 text-sm">
                 Salvar alterações
               </button>
               <button
                 type="button"
-                className="rounded-lg border border-[var(--border)] bg-[var(--background)] px-4 py-2.5 text-sm font-medium text-[var(--foreground)]"
+                className="btn-secondary px-4 py-2.5 text-sm"
                 onClick={() =>
                   setNotice("E-mail de reset enviado (mock).")
                 }
@@ -173,7 +170,7 @@ function ThemeButton({
       onClick={onClick}
       className={
         active
-          ? "rounded-md bg-[var(--foreground)] px-3 py-1.5 text-sm font-medium text-[var(--background)]"
+          ? "btn-primary rounded-md px-3 py-1.5 text-sm"
           : "rounded-md px-3 py-1.5 text-sm font-medium text-[var(--muted)] hover:text-[var(--foreground)]"
       }
     >

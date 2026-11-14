@@ -27,16 +27,10 @@ export default function HomePage() {
           {COURSE.description}
         </p>
         <div className="flex flex-wrap gap-3">
-          <Link
-            href="/trilhas"
-            className="rounded-lg bg-[#0f0f0f] px-5 py-3 text-sm font-medium text-white"
-          >
+          <Link href="/trilhas" className="btn-primary px-5 py-3 text-sm">
             Começar pelas trilhas
           </Link>
-          <a
-            href="#materiais"
-            className="rounded-lg border border-[#e0e0e0] bg-white px-5 py-3 text-sm font-medium text-[#0f0f0f]"
-          >
+          <a href="#materiais" className="btn-secondary px-5 py-3 text-sm">
             Ver materiais
           </a>
         </div>
@@ -129,7 +123,7 @@ export default function HomePage() {
               </p>
               <Link
                 href={material.href}
-                className="rounded-md border border-[#e0e0e0] bg-white px-3 py-1.5 text-xs font-semibold text-[#0f0f0f]"
+                className="btn-secondary rounded-md px-3 py-1.5 text-xs font-semibold"
               >
                 Baixar
               </Link>

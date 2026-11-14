@@ -54,16 +54,10 @@ export default function PlanilhaPage() {
       </div>
 
       <div className="flex flex-wrap gap-3">
-        <a
-          href="#"
-          className="rounded-lg bg-[#0f0f0f] px-5 py-3 text-sm font-medium text-white"
-        >
+        <a href="#" className="btn-primary px-5 py-3 text-sm">
           Abrir planilha modelo
         </a>
-        <Link
-          href="/#materiais"
-          className="rounded-lg border border-[#e6e6e6] bg-white px-5 py-3 text-sm font-medium text-[#0f0f0f]"
-        >
+        <Link href="/#materiais" className="btn-secondary px-5 py-3 text-sm">
           Ver lista de VPS
         </Link>
       </div>

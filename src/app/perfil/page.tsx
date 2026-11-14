@@ -24,10 +24,7 @@ export default function PerfilPage() {
           </div>
         </div>
         <div className="px-6 py-5">
-          <Link
-            href="/configuracoes"
-            className="inline-flex rounded-lg bg-[var(--foreground)] px-4 py-2.5 text-sm font-medium text-[var(--background)]"
-          >
+          <Link href="/configuracoes" className="btn-primary px-4 py-2.5 text-sm">
             Ir para Configurações
           </Link>
         </div>

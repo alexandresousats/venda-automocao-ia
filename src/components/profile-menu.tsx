@@ -38,7 +38,7 @@ export function ProfileMenu() {
         aria-expanded={open}
         aria-controls={menuId}
         onClick={() => setOpen((value) => !value)}
-        className="inline-flex size-9 items-center justify-center rounded-full bg-[var(--foreground)] text-xs font-semibold tracking-wide text-[var(--background)]"
+        className="avatar-btn"
         title="Conta"
       >
         {MOCK_PROFILE.iniciais}
@@ -55,10 +55,10 @@ export function ProfileMenu() {
             href="/perfil"
             role="menuitem"
             onClick={() => setOpen(false)}
-            className="flex items-center justify-between gap-3 border-b border-[var(--border)] px-4 py-3 text-sm font-medium text-[var(--foreground)] hover:bg-[var(--surface)]"
+            className="menu-item border-b border-[var(--border)]"
           >
             <span>Perfil</span>
-            <span aria-hidden className="text-[var(--muted)]">
+            <span aria-hidden className="menu-arrow">
               →
             </span>
           </Link>
@@ -66,10 +66,10 @@ export function ProfileMenu() {
             href="/configuracoes"
             role="menuitem"
             onClick={() => setOpen(false)}
-            className="flex items-center justify-between gap-3 px-4 py-3 text-sm font-medium text-[var(--foreground)] hover:bg-[var(--surface)]"
+            className="menu-item"
           >
             <span>Configurações</span>
-            <span aria-hidden className="text-[var(--muted)]">
+            <span aria-hidden className="menu-arrow">
               →
             </span>
           </Link>

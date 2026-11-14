@@ -59,8 +59,8 @@ export function AulaView() {
           onClick={() => toggleCompleted(track.id, lesson.id)}
           className={
             completed
-              ? "inline-flex shrink-0 items-center gap-2.5 rounded-lg bg-[#17a34a] px-4 py-3 text-sm font-semibold text-white"
-              : "inline-flex shrink-0 items-center gap-2 rounded-lg border border-[#e6e6e6] bg-white px-3.5 py-2.5 text-[13px] font-medium text-[#737373]"
+              ? "btn-complete shrink-0 px-4 py-3 text-sm"
+              : "btn-ghost shrink-0 px-3.5 py-2.5 text-[13px] text-[var(--muted)]"
           }
         >
           {completed ? (
