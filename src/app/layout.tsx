@@ -4,6 +4,7 @@ import { Suspense } from "react";
 import { AppNav } from "@/components/app-nav";
 import { COURSE } from "@/data/course";
 import { CompletionProvider } from "@/lib/completion";
+import { ThemeProvider } from "@/lib/theme";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -25,23 +26,27 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="pt-BR"
+      data-theme="light"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      suppressHydrationWarning
     >
-      <body className="flex min-h-full flex-col bg-white text-[#0f0f0f]">
-        <CompletionProvider>
-          <Suspense
-            fallback={
-              <header className="flex h-[61px] w-full items-center border-b border-[#e6e6e6] bg-white px-6 md:px-12">
-                <span className="text-base font-semibold text-[#0f0f0f]">
-                  {COURSE.brand}
-                </span>
-              </header>
-            }
-          >
-            <AppNav />
-          </Suspense>
-          {children}
-        </CompletionProvider>
+      <body className="flex min-h-full flex-col bg-[var(--background)] text-[var(--foreground)]">
+        <ThemeProvider>
+          <CompletionProvider>
+            <Suspense
+              fallback={
+                <header className="flex h-[61px] w-full items-center border-b border-[var(--border)] bg-[var(--background)] px-6 md:px-12">
+                  <span className="text-base font-semibold text-[var(--foreground)]">
+                    {COURSE.brand}
+                  </span>
+                </header>
+              }
+            >
+              <AppNav />
+            </Suspense>
+            {children}
+          </CompletionProvider>
+        </ThemeProvider>
       </body>
     </html>
   );

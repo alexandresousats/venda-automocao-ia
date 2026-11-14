@@ -27,11 +27,11 @@ export function PageHeader({
 }) {
   return (
     <div className="flex flex-col gap-3">
-      <p className="text-[13px] font-medium text-[#737373]">{eyebrow}</p>
-      <h1 className="text-3xl font-bold leading-tight text-[#0f0f0f] md:text-4xl md:leading-[50px]">
+      <p className="text-[13px] font-medium text-[var(--muted)]">{eyebrow}</p>
+      <h1 className="text-3xl font-bold leading-tight text-[var(--foreground)] md:text-4xl md:leading-[50px]">
         {title}
       </h1>
-      <p className="max-w-3xl text-base leading-[22px] text-[#737373]">
+      <p className="max-w-3xl text-base leading-[22px] text-[var(--muted)]">
         {description}
       </p>
     </div>
