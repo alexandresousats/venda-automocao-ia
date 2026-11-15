@@ -8,7 +8,7 @@ Requisitos: **Node.js ≥ 20.9** (Next 16) e npm.
 
 ```bash
 git clone https://github.com/alexandresousats/venda-automocao-ia.git
-cd curso-atendimento-ia
+cd venda-automocao-ia
 npm install
 npm run dev
 ```
