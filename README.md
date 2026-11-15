@@ -7,7 +7,7 @@ Front-end Next.js (App Router) da plataforma de vídeo do curso. UI preto e bran
 Requisitos: **Node.js ≥ 20.9** (Next 16) e npm.
 
 ```bash
-git clone https://github.com/alexandresousats/curso-atendimento-ia.git
+git clone https://github.com/alexandresousats/venda-automocao-ia.git
 cd curso-atendimento-ia
 npm install
 npm run dev
